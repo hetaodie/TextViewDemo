@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController">
+            <connections>
+                <outlet property="beginPoint" destination="fnU-uY-elE" id="pXq-5O-y9l"/>
+                <outlet property="customTextView" destination="3bW-Aj-imq" id="hk5-hK-v9E"/>
+                <outlet property="lengthPoint" destination="aqv-vu-3Ts" id="iyG-KL-POk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nta-w5-kPE" userLabel="topView">
+                    <rect key="frame" x="0.0" y="20" width="320" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iNV-99-Brl">
+                            <rect key="frame" x="10" y="5" width="60" height="30"/>
+                            <state key="normal" title="选择区域"/>
+                            <connections>
+                                <action selector="selectBtnPress:" destination="-1" eventType="touchUpInside" id="aFV-WQ-PYL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKE-nk-H1i">
+                            <rect key="frame" x="280" y="5" width="30" height="30"/>
+                            <state key="normal" title="滚动"/>
+                            <connections>
+                                <action selector="scrollBtnPress:" destination="-1" eventType="touchUpInside" id="ZVN-C2-Qlz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.1532170575" green="1" blue="0.1150021256" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zKE-nk-H1i" secondAttribute="trailing" constant="10" id="fEc-6J-1Hi"/>
+                        <constraint firstItem="zKE-nk-H1i" firstAttribute="centerY" secondItem="Nta-w5-kPE" secondAttribute="centerY" id="gAj-pe-Nie"/>
+                        <constraint firstItem="iNV-99-Brl" firstAttribute="centerY" secondItem="Nta-w5-kPE" secondAttribute="centerY" id="qdw-lw-5bg"/>
+                        <constraint firstItem="iNV-99-Brl" firstAttribute="leading" secondItem="Nta-w5-kPE" secondAttribute="leading" constant="10" id="qud-h3-wfJ"/>
+                        <constraint firstAttribute="height" constant="40" id="x5n-J8-CWC"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3bW-Aj-imq" customClass="CustomTextView">
+                    <rect key="frame" x="0.0" y="60" width="320" height="468"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">“说实话，一些民营企业现在面临的问题，不是‘玻璃门’、‘弹簧门’、‘旋转门’，而是‘没门’！不知道‘门’在哪儿！”5月4日的国务院常务会议上，李克强直言，“因此，必须进一步放宽准入，让民间资本投资‘有门’！”
+
+　　当天会议决定对促进民间投资政策落实情况开展专项督查，着力扩大民间投资。有关部门统计数据表明，近年来，民营投资在全社会固定资产投资中所占比重超过60%，民营经济对GDP贡献超过60%，民营经济为全社会创造就业岗位占到80%以上。
+
+　　“我们常说，就业稳，经济就稳、社会就稳。”总理说，“因此，必须采取有力措施，推动相关政策落地，进一步放宽准入，打造公平营商环境，促进民间投资回稳向好。”
+
+　　一些民营企业现在面临的问题，不是“玻璃门”、“弹簧门”、“旋转门”，而是“没门”！不知道“门”在哪儿！
+
+　　本届政府成立之初，李克强曾就民间投资政策落实情况部署开展第三方评估。他在5月4日的常务会议上说，过去，我们已经出台了一系列鼓励民间投资的政策，但关键是这些政策没有完全落到实处。
+
+　　有关部门在汇报中说，近年来，我国民间投资增速持续快于整体投资增速。但从去年四季度特别是今年以来，受多重因素影响，民间投资增速有所放缓，占全部投资的比重也出现下降。
+
+　　李克强强调，民间投资是稳增长、调结构、促就业的重要支撑力量。对于当前民间投资增速有所回落的原因，要通过督查深入评估，认真分析解决。
+
+　　“说实话，一些民营企业现在面临的问题，不是‘玻璃门’、‘弹簧门’、‘旋转门’，而是‘没门’！不知道‘门’在哪儿！”总理说。
+
+　　当天会议决定，在各地、各有关部门对政策落实开展自查基础上，国务院派出督查组，围绕国务院2014年出台的关于创新重点领域投融资机制鼓励社会投资的相关文件落实情况，选择部分地区进行督查。
+
+　　李克强还现场“点名”几家机构，就相关政策落实情况开展第三方评估。“只有企业有活力，整个经济才有活力，才能确保我国经济运行在合理区间。”总理说。
+
+　　企业家精神就是创新的核心组成部分
+
+　　会上，国务院一位领导同志谈到，当前，部分地方出现了一种现象：央企、国企负责人前来投资、合作，当地会大力宣传，但民营企业来谈合作，政府负责人却不敢和他们“打交道”。
+
+　　“确实，有些地方负责人见一下民营企业家还‘偷偷摸摸’的，好像民企‘矮人一头’似的！”李克强说，“习近平总书记在‘两会’期间明确提出，要构建新型的政商关系。只要清清白白，为了事业发展，政府官员和企业家打交道有什么顾虑的呢？”
+
+　　当天会议强调，必须尊重和维护企业市场主体地位，保障企业的法律权利，弘扬企业家精神，激发民间投资潜力和创新活力。
+
+　　“我们一直强调要激发创新活力，企业家精神就是创新的核心组成部分。包括我们力推的‘大众创业、万众创新’，也要弘扬企业家精神。”总理说，“今天的小微企业可能就是明天的小巨人，今天的创业者可能就是明天的企业家。”
+
+　　各项政策对国企和民企要“一视同仁”
+
+　　“我到基层考察调研时听到，个别地方群众甚至编出了顺口溜，说地方政府当前对民营企业有‘三不’：不听电话、不接材料、不予办事。这是典型的‘不作为’啊！”讲到这里，李克强加重了语气，“这怎么服务当地民营企业，怎么支撑当地经济发展呢？”
+
+
+　　李克强指出，各级政府要不断优化为民营企业的服务。通过本次专项督查，集中整改存在的问题，克服官员不作为等现象，进一步完善鼓励民间投资政策。
+
+　　总理强调，要针对督查中发现的问题，适时优化调整民间资本投资政策：进一步放开市场准入同时优化服务；金融机构要加大对民营企业支持力度；各项政策对国企和民企要“一视同仁”；积极引导城市资本投资农业。
+
+　　“这方面投资潜力很大啊！我最近在四川考察一个农业集团，这家来自城市的企业，通过引进先进生产模式，发展多种规模经营的现代农业，还通过互联网拓展销路，尝试开创全新的推广模式。”总理说，“要积极吸引民间投资投向农业产业，推动农产品销售创新和农业结构调整。”
+
+　　李克强最后要求国务院督查组要提高工作效率，尽快拿出针对民间资本投资的修改意见，形成积极引导信心和预期、推动经济向好的政策硬举措。（李之南）</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="kK9-NC-hvC"/>
+                    </connections>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0XT-9Q-Aay" userLabel="bottomView">
+                    <rect key="frame" x="0.0" y="528" width="320" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fnU-uY-elE">
+                            <rect key="frame" x="53" y="5" width="49" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49" id="amb-Px-Opl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68a-A0-Y1r">
+                            <rect key="frame" x="280" y="5" width="30" height="30"/>
+                            <state key="normal" title="编辑"/>
+                            <state key="selected" title="显示"/>
+                            <connections>
+                                <action selector="editBtnPress:" destination="-1" eventType="touchUpInside" id="2ok-Gt-u2d"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="begin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pho-A5-CTG">
+                            <rect key="frame" x="5" y="10" width="43" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="43" id="YyY-Qo-aRA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="length" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udP-uZ-ZeP">
+                            <rect key="frame" x="107" y="9" width="49" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49" id="qOf-I2-QRQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aqv-vu-3Ts">
+                            <rect key="frame" x="161" y="5" width="49" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="49" id="kp0-9Q-cv3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.47899502150000001" blue="0.25037424279999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="udP-uZ-ZeP" firstAttribute="leading" secondItem="fnU-uY-elE" secondAttribute="trailing" constant="5" id="0J4-n9-ObA"/>
+                        <constraint firstItem="aqv-vu-3Ts" firstAttribute="centerY" secondItem="0XT-9Q-Aay" secondAttribute="centerY" id="0om-dV-fR0"/>
+                        <constraint firstItem="68a-A0-Y1r" firstAttribute="centerY" secondItem="0XT-9Q-Aay" secondAttribute="centerY" id="1cP-xG-J1h"/>
+                        <constraint firstItem="Pho-A5-CTG" firstAttribute="leading" secondItem="0XT-9Q-Aay" secondAttribute="leading" constant="5" id="EGV-ee-xCd"/>
+                        <constraint firstItem="udP-uZ-ZeP" firstAttribute="centerY" secondItem="0XT-9Q-Aay" secondAttribute="centerY" id="GLr-9g-HMB"/>
+                        <constraint firstItem="fnU-uY-elE" firstAttribute="leading" secondItem="Pho-A5-CTG" secondAttribute="trailing" constant="5" id="Pbj-m4-fqX"/>
+                        <constraint firstItem="aqv-vu-3Ts" firstAttribute="leading" secondItem="udP-uZ-ZeP" secondAttribute="trailing" constant="5" id="T5Q-GV-mB5"/>
+                        <constraint firstAttribute="trailing" secondItem="68a-A0-Y1r" secondAttribute="trailing" constant="10" id="XiC-FW-Uuh"/>
+                        <constraint firstItem="fnU-uY-elE" firstAttribute="centerY" secondItem="0XT-9Q-Aay" secondAttribute="centerY" id="cLF-V8-aaE"/>
+                        <constraint firstAttribute="height" constant="40" id="naO-96-gmZ"/>
+                        <constraint firstItem="Pho-A5-CTG" firstAttribute="centerY" secondItem="0XT-9Q-Aay" secondAttribute="centerY" id="oMu-gw-P7Q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0XT-9Q-Aay" firstAttribute="top" secondItem="3bW-Aj-imq" secondAttribute="bottom" id="0e8-Th-fcS"/>
+                <constraint firstItem="3bW-Aj-imq" firstAttribute="top" secondItem="Nta-w5-kPE" secondAttribute="bottom" id="39g-9e-vHf"/>
+                <constraint firstAttribute="trailing" secondItem="3bW-Aj-imq" secondAttribute="trailing" id="DTy-5X-0hJ"/>
+                <constraint firstItem="Nta-w5-kPE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="EO8-pi-Lxu"/>
+                <constraint firstAttribute="trailing" secondItem="Nta-w5-kPE" secondAttribute="trailing" id="Hfz-Aj-lHL"/>
+                <constraint firstItem="3bW-Aj-imq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TDv-ma-yI0"/>
+                <constraint firstAttribute="trailing" secondItem="0XT-9Q-Aay" secondAttribute="trailing" id="TEL-9Q-WdA"/>
+                <constraint firstAttribute="bottom" secondItem="0XT-9Q-Aay" secondAttribute="bottom" id="cyA-qw-d7x"/>
+                <constraint firstItem="Nta-w5-kPE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dxX-E4-TAd"/>
+                <constraint firstItem="0XT-9Q-Aay" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fWU-pb-Xgl"/>
+            </constraints>
+            <point key="canvasLocation" x="306" y="453"/>
+        </view>
+    </objects>
+</document>
